@@ -1,7 +1,6 @@
 # Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
 
-
-def inputNumbers(x):
+def GetNumbers(x):
     xyz = ["X", "Y", "Z"]
     a = []
     for i in range(x):
@@ -16,7 +15,7 @@ def checkPredicate(x):
     return result
 
 
-statement = inputNumbers(3)
+statement = GetNumbers(3)
 
 if checkPredicate(statement) == True:
     print(f"Утверждение истинно")
